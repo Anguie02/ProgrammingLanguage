@@ -28,3 +28,4 @@ C:\Users\ALUMNO\Documents\Angela\Semana3\usuarios\usuarios\obj\Debug\net8.0\refi
 C:\Users\ALUMNO\Documents\Angela\Semana3\usuarios\usuarios\obj\Debug\net8.0\usuarios.pdb
 C:\Users\ALUMNO\Documents\Angela\Semana3\usuarios\usuarios\obj\Debug\net8.0\usuarios.genruntimeconfig.cache
 C:\Users\ALUMNO\Documents\Angela\Semana3\usuarios\usuarios\obj\Debug\net8.0\ref\usuarios.dll
+C:\Users\ALUMNO\Documents\Angela\Semana3\usuarios\usuarios\obj\Debug\net8.0\usuarios.sourcelink.json
