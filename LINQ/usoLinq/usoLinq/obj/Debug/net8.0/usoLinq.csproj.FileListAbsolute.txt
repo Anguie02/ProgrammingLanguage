@@ -1,0 +1,14 @@
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\bin\Debug\net8.0\usoLinq.exe
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\bin\Debug\net8.0\usoLinq.deps.json
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\bin\Debug\net8.0\usoLinq.runtimeconfig.json
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\bin\Debug\net8.0\usoLinq.dll
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\bin\Debug\net8.0\usoLinq.pdb
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.AssemblyInfoInputs.cache
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.AssemblyInfo.cs
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.csproj.CoreCompileInputs.cache
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.dll
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\refint\usoLinq.dll
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.pdb
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\usoLinq.genruntimeconfig.cache
+C:\Users\Enrique\Desktop\PRACTICE_IN_HOUSE\LINQ\usoLinq\usoLinq\obj\Debug\net8.0\ref\usoLinq.dll
