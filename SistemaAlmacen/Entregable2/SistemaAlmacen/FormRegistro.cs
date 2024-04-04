@@ -15,7 +15,7 @@ namespace SistemaAlmacen
     {
 
         // Cadena de conexión a la base de datos
-        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= logins;Integrated Security=True";
+        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= sistemaAlmacen;Integrated Security=True";
         public FormRegistro()
         {
             InitializeComponent();
@@ -28,10 +28,30 @@ namespace SistemaAlmacen
             string descripcion = txtDescripcion.Text;
             string sku = txtSku.Text;
             string categoria = txtCategoria.Text;
-            decimal precio = decimal.Parse(txtPrecio.Text); // Convertir el precio a decimal
-            int cantidad = int.Parse(txtCantStock.Text); // Convertir la cantidad a entero
+           
+
+            // Validar y convertir el precio a decimal
+            if (!decimal.TryParse(txtPrecio.Text, out decimal precio))
+            {
+                MessageBox.Show("El precio ingresado no es válido.");
+                return;
+            }
+
+            // Validar y convertir la cantidad a entero
+            if (!int.TryParse(txtCantStock.Text, out int cantidad))
+            {
+                MessageBox.Show("La cantidad ingresada no es válida.");
+                return;
+            }
+
             string unidadMedida = txtUMedida.Text;
-            DateTime fechaVencimiento = DateTime.Parse(txtVencimiento.Text); // Convertir la fecha a DateTime
+
+            // Obtener la fecha de vencimiento del DateTimePicker
+            DateTime? fechaVencimiento = null;
+            if (!checkBoxNoAplica.Checked)
+            {
+                fechaVencimiento = dtpFechaVencimiento.Value;
+            }
 
             try
             {
@@ -39,8 +59,8 @@ namespace SistemaAlmacen
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Crear la consulta SQL
-                    string query = @"INSERT INTO Productos (Nombre, Descripcion, SKU, Categoria, Precio, CantidadEnStock, UnidadMedida, FechaVencimiento) 
-                                     VALUES (@Nombre, @Descripcion, @SKU, @Categoria, @Precio, @Cantidad, @UnidadMedida, @FechaVencimiento)";
+                    string query = @"INSERT INTO Productos (nombre, descripcion, sku, categoria, precio, cantidad_stock, unidad_medida, fecha_vencimiento) 
+                             VALUES (@Nombre, @Descripcion, @SKU, @Categoria, @Precio, @Cantidad, @UnidadMedida, @FechaVencimiento)";
 
                     // Crear el comando con la consulta SQL y la conexión
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -81,12 +101,11 @@ namespace SistemaAlmacen
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
         }
 
         private void LimpiarCampos()
         {
-            // Limpiar los campos de texto
+            // Limpiar los campos de texto y el DateTimePicker
             txtNombre.Text = "";
             txtDescripcion.Text = "";
             txtSku.Text = "";
@@ -94,7 +113,9 @@ namespace SistemaAlmacen
             txtPrecio.Text = "";
             txtCantStock.Text = "";
             txtUMedida.Text = "";
-            txtVencimiento.Text = "";
+            checkBoxNoAplica.Checked = false;
+            dtpFechaVencimiento.Value = DateTime.Now; // Establecer la fecha de vencimiento a la fecha actual
         }
     }
 }
+

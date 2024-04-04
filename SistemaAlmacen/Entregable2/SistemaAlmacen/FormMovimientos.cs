@@ -15,7 +15,7 @@ namespace SistemaAlmacen
     public partial class FormMovimientos : Form
     {
         // Cadena de conexión a la base de datos
-        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= logins;Integrated Security=True";
+        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= sistemaAlmacen;Integrated Security=True";
         public FormMovimientos()
         {
             InitializeComponent();
@@ -23,12 +23,12 @@ namespace SistemaAlmacen
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            // Obtener los datos de los campos de texto
-            string tipo = txtTipo.Text;
+           // Obtener los datos de los campos de texto
+            string tipo = cmbTipo.SelectedItem.ToString();
             int idProducto = int.Parse(txtIdProducto.Text);
             int cantidadMovida = int.Parse(txtCantidadMovida.Text);
             DateTime fechaMovimiento = dtpFechaMovimiento.Value.Date; // Obtener solo la fecha sin la hora
-            DateTime horaMovimiento = DateTime.ParseExact(txtHoraMovimiento.Text, "HH:mm", CultureInfo.InvariantCulture); // Obtener solo la hora sin la fecha
+            TimeSpan horaMovimiento = dtpHoraMovimiento.Value.TimeOfDay; // Obtener solo la hora sin la fecha
             string origen = txtOrigen.Text;
             string destino = txtDestino.Text;
 
@@ -83,15 +83,17 @@ namespace SistemaAlmacen
 
         private void LimpiarCamposMovimiento()
         {
-            // Limpiar los campos de texto
-            txtTipo.Text = "";
+            // Limpiar los campos de texto y selección
+            cmbTipo.SelectedIndex = -1;
             txtIdProducto.Text = "";
             txtCantidadMovida.Text = "";
-            dtpFechaMovimiento.Value = DateTime.Now.Date;
-            txtHoraMovimiento.Text = "";
+            dtpFechaMovimiento.Value = DateTime.Now;
+            dtpHoraMovimiento.Value = DateTime.Now;
             txtOrigen.Text = "";
             txtDestino.Text = "";
+
         }
-    }
-    
+
+       
 }
+    }

@@ -30,15 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMovimientos));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpHoraMovimiento = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaMovimiento = new System.Windows.Forms.DateTimePicker();
             this.txtDestino = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtOrigen = new System.Windows.Forms.TextBox();
-            this.txtHora = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtCantidadMovida = new System.Windows.Forms.TextBox();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -47,6 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -54,15 +54,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.cmbTipo);
+            this.panel1.Controls.Add(this.dtpHoraMovimiento);
+            this.panel1.Controls.Add(this.dtpFechaMovimiento);
             this.panel1.Controls.Add(this.txtDestino);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtOrigen);
-            this.panel1.Controls.Add(this.txtHora);
-            this.panel1.Controls.Add(this.txtFecha);
             this.panel1.Controls.Add(this.txtCantidadMovida);
             this.panel1.Controls.Add(this.txtIdProducto);
-            this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -75,6 +75,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 5;
+            // 
+            // dtpHoraMovimiento
+            // 
+            this.dtpHoraMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHoraMovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraMovimiento.Location = new System.Drawing.Point(496, 169);
+            this.dtpHoraMovimiento.Name = "dtpHoraMovimiento";
+            this.dtpHoraMovimiento.ShowUpDown = true;
+            this.dtpHoraMovimiento.Size = new System.Drawing.Size(166, 22);
+            this.dtpHoraMovimiento.TabIndex = 27;
+            
+            // 
+            // dtpFechaMovimiento
+            // 
+            this.dtpFechaMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaMovimiento.Location = new System.Drawing.Point(148, 394);
+            this.dtpFechaMovimiento.Name = "dtpFechaMovimiento";
+            this.dtpFechaMovimiento.Size = new System.Drawing.Size(166, 22);
+            this.dtpFechaMovimiento.TabIndex = 26;
             // 
             // txtDestino
             // 
@@ -114,45 +133,21 @@
             this.txtOrigen.Size = new System.Drawing.Size(141, 22);
             this.txtOrigen.TabIndex = 22;
             // 
-            // txtHora
-            // 
-            this.txtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHora.Location = new System.Drawing.Point(512, 169);
-            this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(141, 22);
-            this.txtHora.TabIndex = 21;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(162, 384);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(141, 22);
-            this.txtFecha.TabIndex = 19;
-            // 
             // txtCantidadMovida
             // 
             this.txtCantidadMovida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadMovida.Location = new System.Drawing.Point(162, 314);
+            this.txtCantidadMovida.Location = new System.Drawing.Point(148, 322);
             this.txtCantidadMovida.Name = "txtCantidadMovida";
-            this.txtCantidadMovida.Size = new System.Drawing.Size(141, 22);
+            this.txtCantidadMovida.Size = new System.Drawing.Size(166, 22);
             this.txtCantidadMovida.TabIndex = 18;
             // 
             // txtIdProducto
             // 
             this.txtIdProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProducto.Location = new System.Drawing.Point(162, 245);
+            this.txtIdProducto.Location = new System.Drawing.Point(148, 245);
             this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(141, 22);
+            this.txtIdProducto.Size = new System.Drawing.Size(166, 22);
             this.txtIdProducto.TabIndex = 17;
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(162, 169);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(141, 22);
-            this.txtTipo.TabIndex = 16;
             // 
             // btnAgregar
             // 
@@ -242,6 +237,17 @@
             this.label1.Text = "Tipo:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Entrada",
+            "Salida"});
+            this.cmbTipo.Location = new System.Drawing.Point(151, 167);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(162, 21);
+            this.cmbTipo.TabIndex = 28;
+            // 
             // FormMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,11 +270,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtOrigen;
-        private System.Windows.Forms.TextBox txtHora;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtCantidadMovida;
         private System.Windows.Forms.TextBox txtIdProducto;
-        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -277,5 +280,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtpFechaMovimiento;
+        private System.Windows.Forms.DateTimePicker dtpHoraMovimiento;
+        private System.Windows.Forms.ComboBox cmbTipo;
     }
 }
