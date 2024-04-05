@@ -1,0 +1,15 @@
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\bin\Debug\netstandard2.0\CalculadoraApp.deps.json
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\bin\Debug\netstandard2.0\CalculadoraApp.dll
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\bin\Debug\netstandard2.0\ref\CalculadoraApp.dll
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\bin\Debug\netstandard2.0\CalculadoraApp.pdb
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.csproj.AssemblyReference.cache
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.AssemblyInfoInputs.cache
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.AssemblyInfo.cs
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.csproj.CoreCompileInputs.cache
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.dll
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\refint\CalculadoraApp.dll
+C:\Users\SOPORTE\Documents\Angela\Semana4\CalculadoraApp\CalculadoraApp\CalculadoraApp\obj\Debug\netstandard2.0\CalculadoraApp.pdb

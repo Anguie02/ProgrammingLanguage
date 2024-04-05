@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtSku = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -48,10 +50,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.txtCategoria);
-            this.panel1.Controls.Add(this.txtSku);
-            this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.txtApellidos);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtCorreo);
+            this.panel1.Controls.Add(this.txtDireccion);
+            this.panel1.Controls.Add(this.txtTelefono);
+            this.panel1.Controls.Add(this.txtNombres);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label7);
@@ -64,37 +68,48 @@
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 2;
             // 
-            // txtCategoria
+            // label2
             // 
-            this.txtCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(491, 189);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(141, 22);
-            this.txtCategoria.TabIndex = 19;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label2.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 191);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 40);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Apellidos:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtSku
+            // txtCorreo
             // 
-            this.txtSku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSku.Location = new System.Drawing.Point(491, 272);
-            this.txtSku.Name = "txtSku";
-            this.txtSku.Size = new System.Drawing.Size(141, 22);
-            this.txtSku.TabIndex = 18;
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(175, 273);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(141, 22);
+            this.txtCorreo.TabIndex = 19;
             // 
-            // txtDescripcion
+            // txtDireccion
             // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(162, 280);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(141, 22);
-            this.txtDescripcion.TabIndex = 17;
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Location = new System.Drawing.Point(175, 408);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(141, 22);
+            this.txtDireccion.TabIndex = 18;
             // 
-            // txtNombre
+            // txtTelefono
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(162, 181);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(141, 22);
-            this.txtNombre.TabIndex = 16;
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(175, 340);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(141, 22);
+            this.txtTelefono.TabIndex = 17;
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombres.Location = new System.Drawing.Point(175, 146);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(141, 22);
+            this.txtNombres.TabIndex = 16;
             // 
             // btnAgregar
             // 
@@ -106,11 +121,12 @@
             this.btnAgregar.TabIndex = 15;
             this.btnAgregar.Text = "Añadir";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(95, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(200, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(134, 103);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +137,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label7.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 270);
+            this.label7.Location = new System.Drawing.Point(35, 322);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 40);
             this.label7.TabIndex = 10;
@@ -132,7 +148,7 @@
             // 
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label6.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(342, 262);
+            this.label6.Location = new System.Drawing.Point(35, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 40);
             this.label6.TabIndex = 9;
@@ -143,7 +159,7 @@
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(342, 171);
+            this.label5.Location = new System.Drawing.Point(35, 390);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 40);
             this.label5.TabIndex = 8;
@@ -154,23 +170,31 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 163);
+            this.label1.Location = new System.Drawing.Point(35, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 40);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Nombre:";
+            this.label1.Text = "Nombres:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(219, 27);
+            this.label3.Location = new System.Drawing.Point(324, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(207, 71);
             this.label3.TabIndex = 3;
             this.label3.Text = "Registrar Cliente";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.Location = new System.Drawing.Point(175, 209);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(141, 22);
+            this.txtApellidos.TabIndex = 21;
             // 
             // FormCliente
             // 
@@ -190,10 +214,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtCategoria;
-        private System.Windows.Forms.TextBox txtSku;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
@@ -201,5 +225,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtApellidos;
     }
 }

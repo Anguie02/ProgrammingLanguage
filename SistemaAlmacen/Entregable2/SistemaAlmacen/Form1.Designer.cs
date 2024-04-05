@@ -37,6 +37,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbOpciones = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -46,6 +47,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.cmbOpciones);
             this.panel2.Controls.Add(this.btnActualizar);
             this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.btnRegistrar);
@@ -67,6 +69,7 @@
             this.btnActualizar.TabIndex = 7;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnBuscar
             // 
@@ -78,6 +81,7 @@
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnRegistrar
             // 
@@ -132,6 +136,19 @@
             this.label3.Text = "Gestionar Productos";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmbOpciones
+            // 
+            this.cmbOpciones.FormattingEnabled = true;
+            this.cmbOpciones.Items.AddRange(new object[] {
+            "Producto",
+            "Entradas",
+            "Salidas",
+            "Movimientos"});
+            this.cmbOpciones.Location = new System.Drawing.Point(182, 79);
+            this.cmbOpciones.Name = "cmbOpciones";
+            this.cmbOpciones.Size = new System.Drawing.Size(68, 21);
+            this.cmbOpciones.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +175,7 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.ComboBox cmbOpciones;
     }
 }
 

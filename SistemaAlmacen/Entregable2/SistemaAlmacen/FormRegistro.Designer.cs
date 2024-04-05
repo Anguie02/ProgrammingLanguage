@@ -30,25 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistro));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtUMedida = new System.Windows.Forms.TextBox();
+            this.txtCantStock = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtSku = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtSku = new System.Windows.Forms.TextBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtCantStock = new System.Windows.Forms.TextBox();
-            this.txtUMedida = new System.Windows.Forms.TextBox();
-            this.txtVencimiento = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dtpFechaVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.checkBoxNoAplica = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.txtVencimiento);
+            this.panel1.Controls.Add(this.checkBoxNoAplica);
+            this.panel1.Controls.Add(this.dtpFechaVencimiento);
             this.panel1.Controls.Add(this.txtUMedida);
             this.panel1.Controls.Add(this.txtCantStock);
             this.panel1.Controls.Add(this.txtPrecio);
@@ -79,6 +81,74 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 0;
+            // 
+            // txtUMedida
+            // 
+            this.txtUMedida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUMedida.Location = new System.Drawing.Point(494, 269);
+            this.txtUMedida.Name = "txtUMedida";
+            this.txtUMedida.Size = new System.Drawing.Size(141, 22);
+            this.txtUMedida.TabIndex = 23;
+            // 
+            // txtCantStock
+            // 
+            this.txtCantStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantStock.Location = new System.Drawing.Point(494, 213);
+            this.txtCantStock.Name = "txtCantStock";
+            this.txtCantStock.Size = new System.Drawing.Size(141, 22);
+            this.txtCantStock.TabIndex = 22;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(494, 151);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(141, 22);
+            this.txtPrecio.TabIndex = 21;
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoria.Location = new System.Drawing.Point(162, 323);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(141, 22);
+            this.txtCategoria.TabIndex = 19;
+            // 
+            // txtSku
+            // 
+            this.txtSku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSku.Location = new System.Drawing.Point(162, 269);
+            this.txtSku.Name = "txtSku";
+            this.txtSku.Size = new System.Drawing.Size(141, 22);
+            this.txtSku.TabIndex = 18;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(162, 213);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(141, 22);
+            this.txtDescripcion.TabIndex = 17;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(162, 151);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(141, 22);
+            this.txtNombre.TabIndex = 16;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Teal;
+            this.btnAgregar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(549, 400);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(104, 42);
+            this.btnAgregar.TabIndex = 15;
+            this.btnAgregar.Text = "Añadir";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label10
             // 
@@ -112,6 +182,16 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Cantidad en Stock:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(74, -15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 115);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
@@ -179,91 +259,23 @@
             this.label3.Text = "Registrar Producto";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAgregar
+            // dtpFechaVencimiento
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Teal;
-            this.btnAgregar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(549, 400);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(104, 42);
-            this.btnAgregar.TabIndex = 15;
-            this.btnAgregar.Text = "Añadir";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.dtpFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaVencimiento.Location = new System.Drawing.Point(494, 333);
+            this.dtpFechaVencimiento.Name = "dtpFechaVencimiento";
+            this.dtpFechaVencimiento.Size = new System.Drawing.Size(141, 22);
+            this.dtpFechaVencimiento.TabIndex = 24;
             // 
-            // txtNombre
+            // checkBoxNoAplica
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(162, 151);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(141, 22);
-            this.txtNombre.TabIndex = 16;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(162, 213);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(141, 22);
-            this.txtDescripcion.TabIndex = 17;
-            // 
-            // txtSku
-            // 
-            this.txtSku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSku.Location = new System.Drawing.Point(162, 269);
-            this.txtSku.Name = "txtSku";
-            this.txtSku.Size = new System.Drawing.Size(141, 22);
-            this.txtSku.TabIndex = 18;
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(162, 323);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(141, 22);
-            this.txtCategoria.TabIndex = 19;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(494, 151);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(141, 22);
-            this.txtPrecio.TabIndex = 21;
-            // 
-            // txtCantStock
-            // 
-            this.txtCantStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantStock.Location = new System.Drawing.Point(494, 213);
-            this.txtCantStock.Name = "txtCantStock";
-            this.txtCantStock.Size = new System.Drawing.Size(141, 22);
-            this.txtCantStock.TabIndex = 22;
-            // 
-            // txtUMedida
-            // 
-            this.txtUMedida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUMedida.Location = new System.Drawing.Point(494, 269);
-            this.txtUMedida.Name = "txtUMedida";
-            this.txtUMedida.Size = new System.Drawing.Size(141, 22);
-            this.txtUMedida.TabIndex = 23;
-            // 
-            // txtVencimiento
-            // 
-            this.txtVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVencimiento.Location = new System.Drawing.Point(494, 331);
-            this.txtVencimiento.Name = "txtVencimiento";
-            this.txtVencimiento.Size = new System.Drawing.Size(141, 22);
-            this.txtVencimiento.TabIndex = 24;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(74, -15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.checkBoxNoAplica.AutoSize = true;
+            this.checkBoxNoAplica.Location = new System.Drawing.Point(494, 361);
+            this.checkBoxNoAplica.Name = "checkBoxNoAplica";
+            this.checkBoxNoAplica.Size = new System.Drawing.Size(71, 17);
+            this.checkBoxNoAplica.TabIndex = 25;
+            this.checkBoxNoAplica.Text = "No aplica";
+            this.checkBoxNoAplica.UseVisualStyleBackColor = true;
             // 
             // FormRegistro
             // 
@@ -295,12 +307,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtVencimiento;
         private System.Windows.Forms.TextBox txtUMedida;
         private System.Windows.Forms.TextBox txtCantStock;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.TextBox txtSku;
         private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.DateTimePicker dtpFechaVencimiento;
+        private System.Windows.Forms.CheckBox checkBoxNoAplica;
     }
 }

@@ -19,11 +19,46 @@ namespace SistemaAlmacen
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del formulario secundario
-            FormRegistro formularioSecundario = new FormRegistro();
+            string opcionSeleccionada = cmbOpciones.SelectedItem.ToString();
 
-            // Mostrar el formulario secundario
-            formularioSecundario.Show();
+            switch (opcionSeleccionada)
+            {
+                case "Producto":
+                    // Abre la ventana para registrar un producto
+                    FormRegistro formRegistroProducto = new FormRegistro();
+                    formRegistroProducto.ShowDialog();
+                    break;
+                case "Salidas":
+                    // Abre la ventana para registrar una salida
+                    FormSalidas formRegistroSalida = new FormSalidas();
+                    formRegistroSalida.ShowDialog();
+                    break;
+                case "Entradas":
+                    // Abre la ventana para registrar una entrada
+                    FormEntradas formRegistroEntrada = new FormEntradas();
+                    formRegistroEntrada.ShowDialog();
+                    break;
+                case "Movimientos":
+                    // Abre la ventana para registrar un movimiento
+                    FormMovimientos formRegistroMovimiento = new FormMovimientos();
+                    formRegistroMovimiento.ShowDialog();
+                    break;
+                default:
+                    MessageBox.Show("Selecciona una opción válida.");
+                    break;
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            // Abre la ventana correspondiente según la opción seleccionada
+            FormFiltrarcs nuevaVentana = new FormFiltrarcs();
+            nuevaVentana.ShowDialog();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

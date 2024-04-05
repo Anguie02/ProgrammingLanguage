@@ -14,7 +14,7 @@ namespace SistemaAlmacen
     public partial class FormProveedores : Form
     {
         // Cadena de conexión a la base de datos
-        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= logins;Integrated Security=True";
+        string connectionString = "Data Source=(localdb)\\senati;Initial Catalog= sistemaAlmacen;Integrated Security=True";
         public FormProveedores()
         {
             InitializeComponent();

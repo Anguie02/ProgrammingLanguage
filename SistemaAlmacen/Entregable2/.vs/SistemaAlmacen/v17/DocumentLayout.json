@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\",
+  "WorkspaceRootPath": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|e:\\asemestre4\\lenguajeprogramaci\u00F3n\\informes\\proyecto\\sistemaalmacen\\entregable2\\sistemaalmacen\\formmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|e:\\asemestre4\\lenguajeprogramaci\u00F3n\\informes\\proyecto\\sistemaalmacen\\entregable2\\sistemaalmacen\\formmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|e:\\asemestre4\\lenguajeprogramaci\u00F3n\\informes\\proyecto\\sistemaalmacen\\entregable2\\sistemaalmacen\\formproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|e:\\asemestre4\\lenguajeprogramaci\u00F3n\\informes\\proyecto\\sistemaalmacen\\entregable2\\sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\soporte\\documents\\angela\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\soporte\\documents\\angela\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\soporte\\documents\\angela\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormMovimientos.cs",
-              "DocumentMoniker": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormMovimientos.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormMovimientos.cs",
-              "ToolTip": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormMovimientos.cs",
-              "RelativeToolTip": "SistemaAlmacen\\FormMovimientos.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAAAFwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T04:13:07.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormMovimientos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormMovimientos.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormMovimientos.cs",
-              "ToolTip": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormMovimientos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaAlmacen\\FormMovimientos.cs [Dise\u00F1o]",
+              "Title": "FormRegistro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "SistemaAlmacen\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaAlmacen\\FormRegistro.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T04:12:57.845Z",
+              "WhenOpened": "2024-04-04T15:08:19.306Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormProveedores.cs",
-              "DocumentMoniker": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormProveedores.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormProveedores.cs",
-              "ToolTip": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormProveedores.cs",
-              "RelativeToolTip": "SistemaAlmacen\\FormProveedores.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAA5AAAA",
+              "DocumentIndex": 0,
+              "Title": "FormRegistro.cs",
+              "DocumentMoniker": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "SistemaAlmacen\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
+              "RelativeToolTip": "SistemaAlmacen\\FormRegistro.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAowB4AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T04:07:49.495Z",
+              "WhenOpened": "2024-04-04T14:58:10.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormRegistro.cs",
-              "DocumentMoniker": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormRegistro.cs",
-              "ToolTip": "E:\\Asemestre4\\LenguajeProgramaci\u00F3n\\Informes\\proyecto\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
-              "RelativeToolTip": "SistemaAlmacen\\FormRegistro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABzAAAA",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\Form1.cs",
+              "RelativeDocumentMoniker": "SistemaAlmacen\\Form1.cs",
+              "ToolTip": "C:\\Users\\SOPORTE\\Documents\\Angela\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaAlmacen\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T04:01:25.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T14:54:23.287Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
