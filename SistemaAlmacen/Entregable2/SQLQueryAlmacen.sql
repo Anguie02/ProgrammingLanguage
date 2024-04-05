@@ -1,6 +1,4 @@
-create database almacen;
-
-use almacen;
+create database sistemaAlmacen;
 
 -- Crear tabla Proveedores
 CREATE TABLE Proveedores (
@@ -16,7 +14,8 @@ CREATE TABLE Proveedores (
 -- Crear tabla Productos
 CREATE TABLE Productos (
     id_producto INT PRIMARY KEY,
-    nombre VARCHAR(100),
+    nombres VARCHAR(100),
+    apellidos VARCHAR(100),
     descripcion VARCHAR(255),
     sku VARCHAR(50),
     categoria VARCHAR(50),
@@ -29,7 +28,7 @@ CREATE TABLE Productos (
 -- Crear tabla Clientes
 CREATE TABLE Clientes (
     id_cliente INT PRIMARY KEY,
-    nombre_cliente VARCHAR(100),
+    nombre VARCHAR(100),
     telefono VARCHAR(20),
     correo VARCHAR(100),
     direccion VARCHAR(255)
@@ -72,4 +71,3 @@ CREATE TABLE Movimientos (
     destino VARCHAR(100),
     FOREIGN KEY (id_producto) REFERENCES Productos(id_producto)
 );
-
