@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistro));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBoxNoAplica = new System.Windows.Forms.CheckBox();
+            this.dtpFechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.txtUMedida = new System.Windows.Forms.TextBox();
             this.txtCantStock = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -48,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpFechaVencimiento = new System.Windows.Forms.DateTimePicker();
-            this.checkBoxNoAplica = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 0;
+            // 
+            // checkBoxNoAplica
+            // 
+            this.checkBoxNoAplica.AutoSize = true;
+            this.checkBoxNoAplica.Location = new System.Drawing.Point(494, 310);
+            this.checkBoxNoAplica.Name = "checkBoxNoAplica";
+            this.checkBoxNoAplica.Size = new System.Drawing.Size(71, 17);
+            this.checkBoxNoAplica.TabIndex = 25;
+            this.checkBoxNoAplica.Text = "No aplica";
+            this.checkBoxNoAplica.UseVisualStyleBackColor = true;
+            // 
+            // dtpFechaVencimiento
+            // 
+            this.dtpFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaVencimiento.Location = new System.Drawing.Point(494, 333);
+            this.dtpFechaVencimiento.Name = "dtpFechaVencimiento";
+            this.dtpFechaVencimiento.Size = new System.Drawing.Size(141, 22);
+            this.dtpFechaVencimiento.TabIndex = 24;
             // 
             // txtUMedida
             // 
@@ -258,24 +276,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Registrar Producto";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dtpFechaVencimiento
-            // 
-            this.dtpFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaVencimiento.Location = new System.Drawing.Point(494, 333);
-            this.dtpFechaVencimiento.Name = "dtpFechaVencimiento";
-            this.dtpFechaVencimiento.Size = new System.Drawing.Size(141, 22);
-            this.dtpFechaVencimiento.TabIndex = 24;
-            // 
-            // checkBoxNoAplica
-            // 
-            this.checkBoxNoAplica.AutoSize = true;
-            this.checkBoxNoAplica.Location = new System.Drawing.Point(494, 361);
-            this.checkBoxNoAplica.Name = "checkBoxNoAplica";
-            this.checkBoxNoAplica.Size = new System.Drawing.Size(71, 17);
-            this.checkBoxNoAplica.TabIndex = 25;
-            this.checkBoxNoAplica.Text = "No aplica";
-            this.checkBoxNoAplica.UseVisualStyleBackColor = true;
             // 
             // FormRegistro
             // 
