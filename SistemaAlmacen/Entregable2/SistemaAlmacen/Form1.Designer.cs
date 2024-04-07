@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbOpciones = new System.Windows.Forms.ComboBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbOpciones = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,6 +58,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(417, 392);
             this.panel2.TabIndex = 1;
+            // 
+            // cmbOpciones
+            // 
+            this.cmbOpciones.FormattingEnabled = true;
+            this.cmbOpciones.Items.AddRange(new object[] {
+            "Producto",
+            "Proveedor",
+            "Entradas",
+            "Salidas",
+            "Movimientos"});
+            this.cmbOpciones.Location = new System.Drawing.Point(182, 79);
+            this.cmbOpciones.Name = "cmbOpciones";
+            this.cmbOpciones.Size = new System.Drawing.Size(68, 21);
+            this.cmbOpciones.TabIndex = 8;
             // 
             // btnActualizar
             // 
@@ -135,19 +149,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Gestionar Productos";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbOpciones
-            // 
-            this.cmbOpciones.FormattingEnabled = true;
-            this.cmbOpciones.Items.AddRange(new object[] {
-            "Producto",
-            "Entradas",
-            "Salidas",
-            "Movimientos"});
-            this.cmbOpciones.Location = new System.Drawing.Point(182, 79);
-            this.cmbOpciones.Name = "cmbOpciones";
-            this.cmbOpciones.Size = new System.Drawing.Size(68, 21);
-            this.cmbOpciones.TabIndex = 8;
             // 
             // Form1
             // 

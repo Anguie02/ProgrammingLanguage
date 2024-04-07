@@ -43,6 +43,11 @@ namespace SistemaAlmacen
                     FormMovimientos formRegistroMovimiento = new FormMovimientos();
                     formRegistroMovimiento.ShowDialog();
                     break;
+                case "Proveedor":
+                    // Abre la ventana para registrar un proveedor
+                    FormProveedores formProveedores = new FormProveedores();
+                    formProveedores.ShowDialog();
+                    break;
                 default:
                     MessageBox.Show("Selecciona una opción válida.");
                     break;
@@ -60,5 +65,7 @@ namespace SistemaAlmacen
         {
 
         }
+
+       
     }
 }

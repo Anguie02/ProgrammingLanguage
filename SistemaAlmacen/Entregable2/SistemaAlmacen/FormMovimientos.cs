@@ -19,13 +19,67 @@ namespace SistemaAlmacen
         public FormMovimientos()
         {
             InitializeComponent();
+            LlenarComboBoxProductos();
         }
 
+
+        private void LlenarComboBoxProductos()
+        {
+            try
+            {
+                // Crear la conexión
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Abrir la conexión
+                    connection.Open();
+
+                    // Crear la consulta SQL para obtener los IDs de la tabla de productos
+                    string query = "SELECT id_producto FROM Productos";
+
+                    // Crear el comando con la consulta SQL y la conexión
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Ejecutar el comando y obtener los datos
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        // Recorrer los datos y agregar los IDs al ComboBox
+                        while (reader.Read())
+                        {
+                            cmbIdProducto.Items.Add(reader["id_producto"].ToString());
+                        }
+
+                        // Cerrar el lector
+                        reader.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier error que ocurra durante la recuperación de datos
+                MessageBox.Show("Error al llenar ComboBox de productos: " + ex.Message);
+            }
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-           // Obtener los datos de los campos de texto
+            // Verificar si se ha seleccionado un producto en el ComboBox
+            if (cmbIdProducto.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, seleccione un producto válido.");
+                return;
+            }
+
+            // Obtener el tipo de movimiento
             string tipo = cmbTipo.SelectedItem.ToString();
-            int idProducto = int.Parse(txtIdProducto.Text);
+
+            // Obtener el ID del producto seleccionado en el ComboBox
+            int idProducto = 0;
+            if (!int.TryParse(cmbIdProducto.SelectedItem.ToString().Split('-')[0].Trim(), out idProducto))
+            {
+                MessageBox.Show("Por favor, seleccione un producto válido.");
+                return;
+            }
+
+            // Obtener los demás datos de los campos de texto
             int cantidadMovida = int.Parse(txtCantidadMovida.Text);
             DateTime fechaMovimiento = dtpFechaMovimiento.Value.Date; // Obtener solo la fecha sin la hora
             TimeSpan horaMovimiento = dtpHoraMovimiento.Value.TimeOfDay; // Obtener solo la hora sin la fecha
@@ -34,17 +88,15 @@ namespace SistemaAlmacen
 
             try
             {
-                // Crear la conexión
+                // Crear la conexión y el comando SQL
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Crear la consulta SQL
-                    string query = @"INSERT INTO Movimientos (Tipo, IdProducto, CantidadMovida, FechaMovimiento, HoraMovimiento, Origen, Destino) 
-                             VALUES (@Tipo, @IdProducto, @CantidadMovida, @FechaMovimiento, @HoraMovimiento, @Origen, @Destino)";
+                    string query = @"INSERT INTO Movimientos (tipo, id_producto, cantidad_movida, fecha_movimiento, hora_movimiento, origen, destino) 
+                    VALUES (@Tipo, @IdProducto, @CantidadMovida, @FechaMovimiento, @HoraMovimiento, @Origen, @Destino)";
 
-                    // Crear el comando con la consulta SQL y la conexión
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Agregar los parámetros
+                        // Agregar parámetros al comando
                         command.Parameters.AddWithValue("@Tipo", tipo);
                         command.Parameters.AddWithValue("@IdProducto", idProducto);
                         command.Parameters.AddWithValue("@CantidadMovida", cantidadMovida);
@@ -77,20 +129,22 @@ namespace SistemaAlmacen
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error al agregar el movimiento: " + ex.Message);
             }
         }
 
         private void LimpiarCamposMovimiento()
         {
             // Limpiar los campos de texto y selección
-            cmbTipo.SelectedIndex = -1;
-            txtIdProducto.Text = "";
             txtCantidadMovida.Text = "";
             dtpFechaMovimiento.Value = DateTime.Now;
             dtpHoraMovimiento.Value = DateTime.Now;
             txtOrigen.Text = "";
             txtDestino.Text = "";
+
+            // Reiniciar selección del ComboBox
+            cmbIdProducto.SelectedIndex = -1;
+            cmbTipo.SelectedIndex = -1;
 
         }
 

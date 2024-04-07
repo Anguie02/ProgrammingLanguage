@@ -62,26 +62,17 @@ namespace SistemaAlmacen
                         // Abrir la conexión
                         connection.Open();
 
-                        // Crear un lector de datos para leer los resultados
+                        // Crear un DataTable para almacenar los resultados
+                        DataTable dataTable = new DataTable();
+
+                        // Llenar el DataTable con los datos del comando
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            // Limpiar el panel antes de agregar nuevos elementos
-                            panelListar.Controls.Clear();
-
-                            // Recorrer los resultados y agregarlos al panel
-                            while (reader.Read())
-                            {
-                                // Crear un nuevo control para mostrar los datos
-                                Label label = new Label();
-                                label.Text = $"Nombre: {reader["Nombre"]}, Descripción: {reader["Descripcion"]}, SKU: {reader["SKU"]}, Categoría: {reader["Categoria"]}, Precio: {reader["Precio"]}, Cantidad en stock: {reader["CantidadEnStock"]}, Unidad de medida: {reader["UnidadMedida"]}, Fecha de vencimiento: {reader["FechaVencimiento"]}";
-
-                                // Añadir el control al panel
-                                panelListar.Controls.Add(label);
-                            }
+                            dataTable.Load(reader);
                         }
 
-                        // Cerrar la conexión
-                        connection.Close();
+                        // Mostrar los datos en el DataGridView
+                        dataGridViewProductos.DataSource = dataTable;
                     }
                 }
             }

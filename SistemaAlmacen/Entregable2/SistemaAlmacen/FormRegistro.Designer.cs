@@ -50,6 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.checkBoxNoAplica);
             this.panel1.Controls.Add(this.dtpFechaVencimiento);
             this.panel1.Controls.Add(this.txtUMedida);
@@ -277,6 +279,18 @@
             this.label3.Text = "Registrar Producto";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(420, 400);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 42);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +329,6 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.DateTimePicker dtpFechaVencimiento;
         private System.Windows.Forms.CheckBox checkBoxNoAplica;
+        private System.Windows.Forms.Button button1;
     }
 }

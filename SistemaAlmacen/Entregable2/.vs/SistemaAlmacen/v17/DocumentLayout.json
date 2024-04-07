@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\enrique\\desktop\\practice_in_house\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\formfiltrarcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formfiltrarcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\enrique\\desktop\\practice_in_house\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\formfiltrarcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formfiltrarcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|c:\\users\\enrique\\desktop\\practice_in_house\\programminglanguage\\sistemaalmacen\\entregable2\\sistemaalmacen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|solutionrelative:sistemaalmacen\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E2084CC-2A8B-4DFD-AF38-74D6D1EDD2B4}|SistemaAlmacen\\SistemaAlmacen.csproj|C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\sistemaalmacen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,39 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FormFiltrarcs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormFiltrarcs.cs",
+              "RelativeDocumentMoniker": "SistemaAlmacen\\FormFiltrarcs.cs",
+              "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormFiltrarcs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaAlmacen\\FormFiltrarcs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T05:49:24.988Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormFiltrarcs.cs",
+              "DocumentMoniker": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormFiltrarcs.cs",
+              "RelativeDocumentMoniker": "SistemaAlmacen\\FormFiltrarcs.cs",
+              "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormFiltrarcs.cs",
+              "RelativeToolTip": "SistemaAlmacen\\FormFiltrarcs.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T05:49:31.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\Form1.cs",
               "RelativeDocumentMoniker": "SistemaAlmacen\\Form1.cs",
               "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\Form1.cs",
               "RelativeToolTip": "SistemaAlmacen\\Form1.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABwAAAAUAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAcwDoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T05:13:22.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormRegistro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "SistemaAlmacen\\FormRegistro.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:08:19.306Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormRegistro.cs",
-              "DocumentMoniker": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "SistemaAlmacen\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\FormRegistro.cs*",
-              "RelativeToolTip": "SistemaAlmacen\\FormRegistro.cs*",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAAB4AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T14:58:10.443Z",
+              "WhenOpened": "2024-04-07T05:49:16.254Z",
               "EditorCaption": ""
             },
             {
@@ -75,7 +76,8 @@
               "ToolTip": "C:\\Users\\Enrique\\Desktop\\PRACTICE_IN_HOUSE\\ProgrammingLanguage\\SistemaAlmacen\\Entregable2\\SistemaAlmacen\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaAlmacen\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T14:54:23.287Z"
+              "WhenOpened": "2024-04-04T14:54:23.287Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

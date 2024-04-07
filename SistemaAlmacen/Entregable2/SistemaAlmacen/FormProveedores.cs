@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SistemaAlmacen
 {
@@ -36,7 +37,7 @@ namespace SistemaAlmacen
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Crear la consulta SQL
-                    string query = @"INSERT INTO Empresa (NombreEmpresa, NombreContacto, Direccion, Telefono, Correo, TerminosPago) 
+                    string query = @"INSERT INTO Proveedores (nombre_empresa, nombre_contacto, direccion, telefono, correo, terminos_pago) 
                              VALUES (@NombreEmpresa, @NombreContacto, @Direccion, @Telefono, @Correo, @TerminosPago)";
 
                     // Crear el comando con la consulta SQL y la conexión
@@ -62,7 +63,7 @@ namespace SistemaAlmacen
                         // Verificar si se insertaron filas
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Empresa agregada correctamente.");
+                            MessageBox.Show("Proveedor agregado correctamente.");
                             LimpiarCampos();
                         }
                         else
@@ -87,6 +88,32 @@ namespace SistemaAlmacen
             txtTelefono.Text = "";
             txtCorreo.Text = "";
             txtTerminosPago.Text = "";
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            string correo = txtCorreo.Text;
+            if (!EsCorreoValido(correo))
+            {
+                // Si el correo es inválido, deshabilita el botón de envío
+                btnAgregar.Enabled = false;
+                errorProvider1.SetError(txtCorreo, "Por favor, introduce un correo electrónico válido.");
+            }
+            else
+            {
+                // Si el correo es válido, habilita el botón de envío
+                btnAgregar.Enabled = true;
+                errorProvider1.SetError(txtCorreo, "");
+            }
+        }
+
+        public bool EsCorreoValido(string correo)
+        {
+            // Expresión regular para verificar el formato de un correo electrónico
+            string patronCorreo = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            // Verifica si el correo coincide con el patrón de expresión regular
+            return Regex.IsMatch(correo, patronCorreo);
         }
     }
     

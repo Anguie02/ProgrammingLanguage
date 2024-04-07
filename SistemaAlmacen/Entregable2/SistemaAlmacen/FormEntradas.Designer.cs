@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEntradas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbIdProveedor = new System.Windows.Forms.ComboBox();
+            this.dtpHoraEntrada = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNumeroFactEntrada = new System.Windows.Forms.TextBox();
-            this.txtIdProveedor = new System.Windows.Forms.TextBox();
             this.txtCantidadRecibida = new System.Windows.Forms.TextBox();
-            this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,8 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
-            this.dtpHoraEntrada = new System.Windows.Forms.DateTimePicker();
+            this.cmbIdProducto = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -52,13 +52,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.cmbIdProveedor);
+            this.panel1.Controls.Add(this.cmbIdProducto);
             this.panel1.Controls.Add(this.dtpHoraEntrada);
             this.panel1.Controls.Add(this.dtpFechaEntrada);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtNumeroFactEntrada);
-            this.panel1.Controls.Add(this.txtIdProveedor);
             this.panel1.Controls.Add(this.txtCantidadRecibida);
-            this.panel1.Controls.Add(this.txtIdProducto);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -71,6 +71,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 3;
+            // 
+            // cmbIdProveedor
+            // 
+            this.cmbIdProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdProveedor.FormattingEnabled = true;
+            this.cmbIdProveedor.Location = new System.Drawing.Point(494, 243);
+            this.cmbIdProveedor.Name = "cmbIdProveedor";
+            this.cmbIdProveedor.Size = new System.Drawing.Size(141, 24);
+            this.cmbIdProveedor.TabIndex = 30;
+            // 
+            // dtpHoraEntrada
+            // 
+            this.dtpHoraEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraEntrada.Location = new System.Drawing.Point(487, 169);
+            this.dtpHoraEntrada.Name = "dtpHoraEntrada";
+            this.dtpHoraEntrada.ShowUpDown = true;
+            this.dtpHoraEntrada.Size = new System.Drawing.Size(166, 22);
+            this.dtpHoraEntrada.TabIndex = 28;
+            // 
+            // dtpFechaEntrada
+            // 
+            this.dtpFechaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(162, 322);
+            this.dtpFechaEntrada.Name = "dtpFechaEntrada";
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(141, 22);
+            this.dtpFechaEntrada.TabIndex = 25;
             // 
             // label4
             // 
@@ -91,14 +118,6 @@
             this.txtNumeroFactEntrada.Size = new System.Drawing.Size(141, 22);
             this.txtNumeroFactEntrada.TabIndex = 22;
             // 
-            // txtIdProveedor
-            // 
-            this.txtIdProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProveedor.Location = new System.Drawing.Point(494, 245);
-            this.txtIdProveedor.Name = "txtIdProveedor";
-            this.txtIdProveedor.Size = new System.Drawing.Size(141, 22);
-            this.txtIdProveedor.TabIndex = 21;
-            // 
             // txtCantidadRecibida
             // 
             this.txtCantidadRecibida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,14 +125,6 @@
             this.txtCantidadRecibida.Name = "txtCantidadRecibida";
             this.txtCantidadRecibida.Size = new System.Drawing.Size(141, 22);
             this.txtCantidadRecibida.TabIndex = 17;
-            // 
-            // txtIdProducto
-            // 
-            this.txtIdProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProducto.Location = new System.Drawing.Point(162, 169);
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(141, 22);
-            this.txtIdProducto.TabIndex = 16;
             // 
             // btnAgregar
             // 
@@ -203,23 +214,14 @@
             this.label1.Text = "ID producto:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dtpFechaEntrada
+            // cmbIdProducto
             // 
-            this.dtpFechaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(162, 322);
-            this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-            this.dtpFechaEntrada.Size = new System.Drawing.Size(141, 22);
-            this.dtpFechaEntrada.TabIndex = 25;
-            // 
-            // dtpHoraEntrada
-            // 
-            this.dtpHoraEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHoraEntrada.Location = new System.Drawing.Point(487, 169);
-            this.dtpHoraEntrada.Name = "dtpHoraEntrada";
-            this.dtpHoraEntrada.ShowUpDown = true;
-            this.dtpHoraEntrada.Size = new System.Drawing.Size(166, 22);
-            this.dtpHoraEntrada.TabIndex = 28;
+            this.cmbIdProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdProducto.FormattingEnabled = true;
+            this.cmbIdProducto.Location = new System.Drawing.Point(162, 163);
+            this.cmbIdProducto.Name = "cmbIdProducto";
+            this.cmbIdProducto.Size = new System.Drawing.Size(141, 24);
+            this.cmbIdProducto.TabIndex = 29;
             // 
             // FormEntradas
             // 
@@ -241,9 +243,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNumeroFactEntrada;
-        private System.Windows.Forms.TextBox txtIdProveedor;
         private System.Windows.Forms.TextBox txtCantidadRecibida;
-        private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -254,5 +254,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
         private System.Windows.Forms.DateTimePicker dtpHoraEntrada;
+        private System.Windows.Forms.ComboBox cmbIdProveedor;
+        private System.Windows.Forms.ComboBox cmbIdProducto;
     }
 }

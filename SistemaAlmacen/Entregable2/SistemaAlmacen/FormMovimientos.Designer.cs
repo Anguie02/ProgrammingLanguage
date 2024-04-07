@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMovimientos));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.dtpHoraMovimiento = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaMovimiento = new System.Windows.Forms.DateTimePicker();
             this.txtDestino = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtOrigen = new System.Windows.Forms.TextBox();
             this.txtCantidadMovida = new System.Windows.Forms.TextBox();
-            this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.cmbIdProducto = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.cmbIdProducto);
             this.panel1.Controls.Add(this.cmbTipo);
             this.panel1.Controls.Add(this.dtpHoraMovimiento);
             this.panel1.Controls.Add(this.dtpFechaMovimiento);
@@ -62,7 +63,6 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtOrigen);
             this.panel1.Controls.Add(this.txtCantidadMovida);
-            this.panel1.Controls.Add(this.txtIdProducto);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -76,6 +76,17 @@
             this.panel1.Size = new System.Drawing.Size(668, 456);
             this.panel1.TabIndex = 5;
             // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Entrada",
+            "Salida"});
+            this.cmbTipo.Location = new System.Drawing.Point(151, 167);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(162, 21);
+            this.cmbTipo.TabIndex = 28;
+            // 
             // dtpHoraMovimiento
             // 
             this.dtpHoraMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,12 +96,11 @@
             this.dtpHoraMovimiento.ShowUpDown = true;
             this.dtpHoraMovimiento.Size = new System.Drawing.Size(166, 22);
             this.dtpHoraMovimiento.TabIndex = 27;
-            
             // 
             // dtpFechaMovimiento
             // 
             this.dtpFechaMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaMovimiento.Location = new System.Drawing.Point(148, 394);
+            this.dtpFechaMovimiento.Location = new System.Drawing.Point(151, 382);
             this.dtpFechaMovimiento.Name = "dtpFechaMovimiento";
             this.dtpFechaMovimiento.Size = new System.Drawing.Size(166, 22);
             this.dtpFechaMovimiento.TabIndex = 26;
@@ -98,9 +108,9 @@
             // txtDestino
             // 
             this.txtDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDestino.Location = new System.Drawing.Point(512, 314);
+            this.txtDestino.Location = new System.Drawing.Point(496, 314);
             this.txtDestino.Name = "txtDestino";
-            this.txtDestino.Size = new System.Drawing.Size(141, 22);
+            this.txtDestino.Size = new System.Drawing.Size(166, 22);
             this.txtDestino.TabIndex = 25;
             // 
             // label3
@@ -128,26 +138,18 @@
             // txtOrigen
             // 
             this.txtOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrigen.Location = new System.Drawing.Point(512, 245);
+            this.txtOrigen.Location = new System.Drawing.Point(496, 245);
             this.txtOrigen.Name = "txtOrigen";
-            this.txtOrigen.Size = new System.Drawing.Size(141, 22);
+            this.txtOrigen.Size = new System.Drawing.Size(166, 22);
             this.txtOrigen.TabIndex = 22;
             // 
             // txtCantidadMovida
             // 
             this.txtCantidadMovida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadMovida.Location = new System.Drawing.Point(148, 322);
+            this.txtCantidadMovida.Location = new System.Drawing.Point(147, 314);
             this.txtCantidadMovida.Name = "txtCantidadMovida";
             this.txtCantidadMovida.Size = new System.Drawing.Size(166, 22);
             this.txtCantidadMovida.TabIndex = 18;
-            // 
-            // txtIdProducto
-            // 
-            this.txtIdProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProducto.Location = new System.Drawing.Point(148, 245);
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(166, 22);
-            this.txtIdProducto.TabIndex = 17;
             // 
             // btnAgregar
             // 
@@ -237,16 +239,14 @@
             this.label1.Text = "Tipo:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmbTipo
+            // cmbIdProducto
             // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Entrada",
-            "Salida"});
-            this.cmbTipo.Location = new System.Drawing.Point(151, 167);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(162, 21);
-            this.cmbTipo.TabIndex = 28;
+            this.cmbIdProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdProducto.FormattingEnabled = true;
+            this.cmbIdProducto.Location = new System.Drawing.Point(151, 237);
+            this.cmbIdProducto.Name = "cmbIdProducto";
+            this.cmbIdProducto.Size = new System.Drawing.Size(162, 24);
+            this.cmbIdProducto.TabIndex = 30;
             // 
             // FormMovimientos
             // 
@@ -271,7 +271,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtOrigen;
         private System.Windows.Forms.TextBox txtCantidadMovida;
-        private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -283,5 +282,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechaMovimiento;
         private System.Windows.Forms.DateTimePicker dtpHoraMovimiento;
         private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.ComboBox cmbIdProducto;
     }
 }

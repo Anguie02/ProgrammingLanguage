@@ -1,8 +1,10 @@
 create database sistemaAlmacen;
 
+Use sistemaAlmacen;
+
 -- Crear tabla Proveedores
 CREATE TABLE Proveedores (
-    id_proveedor INT PRIMARY KEY,
+    id_proveedor INT PRIMARY KEY IDENTITY,
     nombre_empresa VARCHAR(100),
     nombre_contacto VARCHAR(100),
     direccion VARCHAR(255),
@@ -13,9 +15,8 @@ CREATE TABLE Proveedores (
 
 -- Crear tabla Productos
 CREATE TABLE Productos (
-    id_producto INT PRIMARY KEY,
-    nombres VARCHAR(100),
-    apellidos VARCHAR(100),
+    id_producto INT PRIMARY KEY IDENTITY,
+    nombre VARCHAR(100),
     descripcion VARCHAR(255),
     sku VARCHAR(50),
     categoria VARCHAR(50),
@@ -27,8 +28,9 @@ CREATE TABLE Productos (
 
 -- Crear tabla Clientes
 CREATE TABLE Clientes (
-    id_cliente INT PRIMARY KEY,
-    nombre VARCHAR(100),
+    id_cliente INT PRIMARY KEY IDENTITY,
+    nombres VARCHAR(100),
+	apellidos VARCHAR(100),
     telefono VARCHAR(20),
     correo VARCHAR(100),
     direccion VARCHAR(255)
@@ -36,7 +38,7 @@ CREATE TABLE Clientes (
 
 -- Crear tabla Entradas
 CREATE TABLE Entradas (
-    id_entrada INT PRIMARY KEY,
+    id_entrada INT PRIMARY KEY IDENTITY,
     id_producto INT,
     cantidad_recibida INT,
     fecha_entrada DATE,
@@ -49,7 +51,7 @@ CREATE TABLE Entradas (
 
 -- Crear tabla Salidas
 CREATE TABLE Salidas (
-    id_salida INT PRIMARY KEY,
+    id_salida INT PRIMARY KEY IDENTITY,
     id_producto INT,
     cantidad_retirada INT,
     fecha_salida DATE,
@@ -61,7 +63,7 @@ CREATE TABLE Salidas (
 
 -- Crear tabla Movimientos
 CREATE TABLE Movimientos (
-    id_movimiento INT PRIMARY KEY,
+    id_movimiento INT PRIMARY KEY IDENTITY,
     tipo VARCHAR(50),
     id_producto INT,
     cantidad_movida INT,

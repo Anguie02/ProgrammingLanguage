@@ -28,7 +28,6 @@ namespace SistemaAlmacen
             string descripcion = txtDescripcion.Text;
             string sku = txtSku.Text;
             string categoria = txtCategoria.Text;
-           
 
             // Validar y convertir el precio a decimal
             if (!decimal.TryParse(txtPrecio.Text, out decimal precio))
@@ -46,7 +45,7 @@ namespace SistemaAlmacen
 
             string unidadMedida = txtUMedida.Text;
 
-            // Obtener la fecha de vencimiento del DateTimePicker
+            // Obtener la fecha de vencimiento del DateTimePicker si no se seleccionó que no aplica
             DateTime? fechaVencimiento = null;
             if (!checkBoxNoAplica.Checked)
             {
@@ -60,7 +59,7 @@ namespace SistemaAlmacen
                 {
                     // Crear la consulta SQL
                     string query = @"INSERT INTO Productos (nombre, descripcion, sku, categoria, precio, cantidad_stock, unidad_medida, fecha_vencimiento) 
-                             VALUES (@Nombre, @Descripcion, @SKU, @Categoria, @Precio, @Cantidad, @UnidadMedida, @FechaVencimiento)";
+                         VALUES (@Nombre, @Descripcion, @SKU, @Categoria, @Precio, @Cantidad, @UnidadMedida, @FechaVencimiento)";
 
                     // Crear el comando con la consulta SQL y la conexión
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -73,7 +72,9 @@ namespace SistemaAlmacen
                         command.Parameters.AddWithValue("@Precio", precio);
                         command.Parameters.AddWithValue("@Cantidad", cantidad);
                         command.Parameters.AddWithValue("@UnidadMedida", unidadMedida);
-                        command.Parameters.AddWithValue("@FechaVencimiento", fechaVencimiento);
+
+                        // Si fechaVencimiento es nulo, asignar DBNull.Value al parámetro; de lo contrario, asignar el valor de fechaVencimiento
+                        command.Parameters.AddWithValue("@FechaVencimiento", fechaVencimiento ?? (object)DBNull.Value);
 
                         // Abrir la conexión
                         connection.Open();
@@ -115,6 +116,12 @@ namespace SistemaAlmacen
             txtUMedida.Text = "";
             checkBoxNoAplica.Checked = false;
             dtpFechaVencimiento.Value = DateTime.Now; // Establecer la fecha de vencimiento a la fecha actual
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Cierra el formulario actual
+            this.Close();
         }
     }
 }

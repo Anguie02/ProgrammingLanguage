@@ -34,10 +34,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboFiltrar = new System.Windows.Forms.ComboBox();
             this.txtFiltrar = new System.Windows.Forms.TextBox();
-            this.panelListar = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,14 +96,6 @@
             this.txtFiltrar.Size = new System.Drawing.Size(343, 26);
             this.txtFiltrar.TabIndex = 0;
             // 
-            // panelListar
-            // 
-            this.panelListar.BackColor = System.Drawing.Color.SteelBlue;
-            this.panelListar.Location = new System.Drawing.Point(39, 140);
-            this.panelListar.Name = "panelListar";
-            this.panelListar.Size = new System.Drawing.Size(692, 242);
-            this.panelListar.TabIndex = 1;
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Teal;
@@ -115,19 +108,28 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // dataGridViewProductos
+            // 
+            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProductos.Location = new System.Drawing.Point(39, 163);
+            this.dataGridViewProductos.Name = "dataGridViewProductos";
+            this.dataGridViewProductos.Size = new System.Drawing.Size(692, 204);
+            this.dataGridViewProductos.TabIndex = 17;
+            // 
             // FormFiltrarcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewProductos);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.panelListar);
             this.Controls.Add(this.panel1);
             this.Name = "FormFiltrarcs";
             this.Text = "FormFiltrarcs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,10 +138,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtFiltrar;
-        private System.Windows.Forms.Panel panelListar;
         private System.Windows.Forms.ComboBox comboFiltrar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridViewProductos;
     }
 }
